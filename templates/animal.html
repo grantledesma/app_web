@@ -1,0 +1,19 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--        {% if title %}-->
+<!--    <title>Fun Animal facts - {{ title }}</title>-->
+<!--        {% else %}-->
+<!--    <title>Website</title>-->
+<!--        {% endif %}-->
+<!--</head>-->
+{% extends "layout.html" %}
+{% block content %}
+    {% for post in posts %}
+    <h1>{{ post.title}}</h1>
+    <p>By {{ post.author }} on {{ post.date_posted }}</p>
+    <p>{{ post.content }}</p>
+    <b>asdasdasd</b>
+    {% endfor %}
+{% endblock content %}
